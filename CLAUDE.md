@@ -14,6 +14,23 @@ xdg-open tetris.html    # Linux
 start tetris.html       # Windows
 ```
 
+## Git Workflow
+
+After every meaningful change, commit and push immediately so work is never lost:
+
+```bash
+git add <changed-files>
+git commit -m "short, descriptive message"
+git push
+```
+
+Commit message rules:
+- Use the imperative mood: "Add hold piece" not "Added hold piece"
+- One line, under 72 characters
+- Describe *what* changed and *why*, not *how*
+
+Commit and push at minimum after: adding a feature, fixing a bug, updating CLAUDE.md, or any change the user approves. Never batch multiple unrelated changes into one commit.
+
 ## Architecture
 
 Everything lives in `tetris.html` as a single self-contained file with three sections:
